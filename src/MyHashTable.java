@@ -7,7 +7,7 @@ public class MyHashTable <K, V> implements MyMap<K, V> {
         this.values = new Node[initialCapacity];
     }
 
-    public class Node<K, V> {
+    private class Node<K, V> {
         private K key;
         private V value;
         private Node<K, V> next;
