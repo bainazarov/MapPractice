@@ -1,10 +1,15 @@
 public class MyHashTable <K, V> implements MyMap<K, V> {
+    private final int DEFAULT_CAPACITY = 10;
     private Node<K, V>[] values;
     private int initialCapacity;
 
     public MyHashTable(int initialCapacity) {
         this.initialCapacity = initialCapacity;
         this.values = new Node[initialCapacity];
+    }
+    public MyHashTable() {
+        this.initialCapacity = DEFAULT_CAPACITY;
+        this.values = new Node[DEFAULT_CAPACITY];
     }
 
     private class Node<K, V> {

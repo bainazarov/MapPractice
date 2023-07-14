@@ -2,7 +2,7 @@
 
 public class TestOfMap {
     public static void main(String[] args) {
-        MyMap<Integer, String> map = new MyHashTable<>(10);
+        MyMap<Integer, String> map = new MyHashTable<>();
 
         map.put(1, "One");
         map.put(2, "Two");
